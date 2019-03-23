@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+:root {
+  --main-color: rgb(32, 32, 32);
+  --gray-color: rgb(90, 90, 90);
+  --red-color: rgb(161, 32, 54);
+  --red-color-light: rgb(215, 54, 82);
+  --text-color-white: rgb(240, 240, 240);
+  --size-width-admin: calc(100vw - 25rem);
+
+  --table-font: 'Comfortaa', cursive;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+li {
+  list-style: none;
+  outline: none;
+}
+
+a {
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea,
+select {
+  border: none;
+  outline: none;
+}
+
+input:invalid {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* input:-moz-submit-invalid {
+  box-shadow: none;
+}
+
+input:-moz-ui-invalid {
+  box-shadow: none;
+} */
+
+.full-centralize {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.full-screen {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+/* CSS animation */
+.transition-enter {
+  opacity: 0.01;
+}
+
+.transition-enter.transition-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.transition-leave {
+  opacity: 1;
+}
+
+.transition-leave.transition-leave-active {
+  opacity: 0.01;
+  transition: opacity 400ms ease-in;
+}

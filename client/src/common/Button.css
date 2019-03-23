@@ -1,0 +1,161 @@
+.button {
+  border-radius: 5px;
+  font-family: var(--table-font);
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  transition: box-shadow 0.15s ease-in-out;
+}
+
+.button--auth {
+  background: linear-gradient(310deg, rgb(135, 32, 161), rgb(219, 74, 236));
+  color: white;
+  margin: 2rem auto;
+  padding: 1.2rem 3rem;
+}
+
+.button--add {
+  background-color: var(--main-color);
+  border-radius: 50%;
+  color: white;
+  font-size: 2.2rem;
+  padding: 0.8rem 1.5rem;
+}
+
+.button--add:active {
+  box-shadow: 0 0 0 0.2rem var(--main-color);
+}
+
+@media (min-width: 770px) {
+  .button--add {
+    font-size: 1.8rem;
+    padding: 0.8rem 1.3rem;
+  }
+}
+
+.button--confirm {
+  background-color: #787878;
+  color: white;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.button--confirm:active {
+  box-shadow: 0 0 0 0.2rem #787878;
+}
+
+.button--classes {
+  background-color: #cb372c;
+  color: white;
+  font-family: inherit;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  padding: 1.2rem 4rem;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.button--classes:hover {
+  background-color: #ff7428;
+}
+
+.button--price-list {
+  background: transparent;
+  border: 2px solid #ff7428;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 1rem 2.4rem;
+  text-transform: uppercase;
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+@media (min-width: 770px) {
+  .button--price-list {
+    padding: 1rem 3rem;
+  }
+}
+
+.button--price-list:hover {
+  background-color: rgba(255, 116, 40, 0.6);
+}
+
+.button--professor {
+  animation: pulse 2s infinite;
+  color: white;
+  background: linear-gradient(
+    to right,
+    rgba(255, 116, 40, 0.3),
+    rgba(255, 54, 62, 1)
+  );
+  box-shadow: 0 0 0 rgba(204, 169, 44, 0.4);
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+.button--professor:hover {
+  animation: none;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 54, 62, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 54, 62, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 54, 62, 0);
+  }
+}
+
+.button--hero {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px 3px red inset, 0px 0px 40px rgba(255, 0, 0, 0.5),
+    0px 0px 40px rgba(255, 0, 0, 0.5) inset;
+  margin: 0.5rem;
+  padding: 2rem;
+}
+
+@media (min-width: 770px) {
+  .button--hero {
+    margin: 2rem;
+  }
+}
+
+.textHero {
+  color: transparent;
+  font-size: 1.8rem;
+  font-weight: 800;
+  position: relative;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: red;
+
+  text-transform: uppercase;
+  transition: all linear 0.2s;
+}
+
+@media (min-width: 770px) {
+  .textHero {
+    font-size: 2rem;
+  }
+}
+
+.button--hero:hover .textHero {
+  color: red;
+  -webkit-text-stroke-color: transparent;
+}
+
+.button--home {
+  background-color: #cb372c;
+  color: white;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  padding: 1.2rem 4rem;
+  text-transform: uppercase;
+  transition: background 0.5s ease;
+}
+
+.button--home:hover {
+  background: var(--gray-color);
+}
