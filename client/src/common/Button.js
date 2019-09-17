@@ -7,11 +7,7 @@ const Button = ({ text, type, desc, disabled, textStyle }) => {
   let buttonStyles = 'button button--';
   let spanStyles = 'text' + textStyle;
   return (
-    <button
-      className={buttonStyles + desc}
-      type={type}
-      disabled={disabled ? true : false}
-    >
+    <button className={buttonStyles + desc} type={type} disabled={disabled ? true : false}>
       <span className={spanStyles !== 'text' ? spanStyles : ''}>{text}</span>
     </button>
   );
